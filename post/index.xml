@@ -7,7 +7,23 @@
     <generator>Chaoism - chaoism.github.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Chaoism &amp; Hugo; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 12 May 2022 10:42:19 +0800</lastBuildDate><atom:link href="https://chaoism.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 11:27:12 +0800</lastBuildDate><atom:link href="https://chaoism.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数学公式常用写法</title>
+      <link>https://chaoism.github.io/post/katex/</link>
+      <pubDate>Sun, 15 May 2022 11:27:12 +0800</pubDate>
+      
+      <guid>https://chaoism.github.io/post/katex/</guid>
+      <description>
+        
+          
+            在网页中展示数学公式，使Hugo支持LaTex形式。已经生成好的静态页面中，使用JavaScript来渲染LaTeX形式的数学公式，本博客采用KaTex来渲染前端数学公式。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>苏轼诗词选集</title>
       <link>https://chaoism.github.io/post/%E8%8B%8F%E8%BD%BC/</link>
