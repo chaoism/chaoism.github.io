@@ -9,6 +9,38 @@
     <copyright>Copyright © 2008–2018, Chaoism &amp; Hugo; all rights reserved.</copyright>
     <lastBuildDate>Thu, 12 May 2022 10:21:24 +0800</lastBuildDate><atom:link href="https://chaoism.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>孙子兵法</title>
+      <link>https://chaoism.github.io/post/art-of-war/</link>
+      <pubDate>Fri, 20 May 2022 10:27:35 +0800</pubDate>
+      
+      <guid>https://chaoism.github.io/post/art-of-war/</guid>
+      <description>
+        
+          
+            《孙子兵法》，即《孙子》，又称作《武经》、《兵经》、《孙武兵法》、《吴孙子兵法》，是中国古代的兵书，作者为春秋末期的齐国人孙武（字长卿）。一般认为，《孙子兵法》成书于专诸刺吴王僚之后至阖闾三年孙武见吴王之间，也即前515至前512年，全书为十三篇，是孙武初次见面赠送给吴王的见面礼；事见司马迁《史记》：“孙子武者，齐人也，以兵法见吴王阖闾。阖闾曰：子之十三篇吾尽观之矣。”
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>树 (数据结构)</title>
+      <link>https://chaoism.github.io/post/tree/</link>
+      <pubDate>Wed, 18 May 2022 15:23:31 +0800</pubDate>
+      
+      <guid>https://chaoism.github.io/post/tree/</guid>
+      <description>
+        
+          
+            树是一种抽象数据类型（ADT）或是实作这种抽象数据类型的数据结构，用来模拟具有树状结构性质的数据集合。它是由n（n&gt;0）个有限节点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>数学公式常用写法</title>
       <link>https://chaoism.github.io/post/katex/</link>
       <pubDate>Sun, 15 May 2022 11:27:12 +0800</pubDate>

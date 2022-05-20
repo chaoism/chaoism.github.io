@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en" data-figures="">
+<html lang="en" data-figures="true" class="page">
   <head>
-<title>苏轼 | Chaoism</title>
+<title>树 (数据结构) | Chaoism</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +10,20 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="Article description." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@green_pook">
-<meta name="twitter:title" content="苏轼" />
-<meta property="og:url" content="https://chaoism.github.io/tags/%E8%8B%8F%E8%BD%BC/" />
-<meta property="og:title" content="苏轼" />
-<meta property="og:description" content="" />
+<meta name="twitter:title" content="树 (数据结构)" />
+<meta property="og:url" content="https://chaoism.github.io/post/tree/" />
+<meta property="og:title" content="树 (数据结构)" />
+<meta property="og:description" content="Article description." />
 <meta property="og:image" content="https://chaoism.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chaoism.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chaoism.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://chaoism.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://chaoism.github.io/tags/%E8%8B%8F%E8%BD%BC/">
-<link rel="alternate" type="application/rss+xml" href="https://chaoism.github.io/tags/%E8%8B%8F%E8%BD%BC/index.xml" title="Chaoism" />
+<link rel="canonical" href="https://chaoism.github.io/post/tree/">
 
     
 
@@ -41,8 +40,9 @@
   
   
     
+    
   
-  <body data-code="7" data-lines="false" id="documentTop">
+  <body data-code="10" data-lines="false" id="documentTop">
 
 <header class="nav_header" >
   <nav class="nav"><a href='https://chaoism.github.io/' class="nav_brand nav_item" title="Chaoism">Chaoism
@@ -111,15 +111,8 @@
     <main>
 
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h2 class="post_link">
-        <a href="https://chaoism.github.io/post/%E8%8B%8F%E8%BD%BC/" title="苏轼诗词选集">苏轼诗词选集</a>
-      </h2>
-      
+  <article class="post_content">
+    <h1 class="post_title">树 (数据结构)</h1>
 <div class="post_meta">
   <span><svg class="icon">
   <title>calendar</title>
@@ -127,28 +120,110 @@
 </svg>
 </span>
   <span class="post_date">
-    2022-05-12</span>
-  <span>&nbsp;· <a href='https://chaoism.github.io/tags/%E8%8B%8F%E8%BD%BC' title="苏轼" class="post_tag button button_translucent">苏轼
-    </a><a href='https://chaoism.github.io/tags/%E8%8B%8F%E8%BD%BC%E8%AF%97%E8%AF%8D' title="苏轼诗词" class="post_tag button button_translucent">苏轼诗词
+    2022-05-18</span>
+  <span>&nbsp;· <a href='https://chaoism.github.io/tags/tree' title="tree" class="post_tag button button_translucent">tree
     </a>
   </span>
 </div>
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-          <p>苏轼，眉州眉山人，北宋时著名的文学家、政治家、艺术家。字子瞻，一字和仲，号东坡居士、铁冠道人。嘉佑二年进士，累官至端明殿学士兼翰林学士，礼部尚书。南宋理学方炽时，加赐谥号文忠，复追赠太师。有《东坡先生大全集》及《东坡乐府》词集传世，宋人王宗稷收其作品，编有《苏文忠公全集》。</p>
-          
-          <br>
-          <a href="https://chaoism.github.io/post/%E8%8B%8F%E8%BD%BC/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
+    <div class="post_body"><p><strong>树</strong>，是一种抽象数据类型（<code>ADT</code>）或是实作这种抽象数据类型的数据结构，用来模拟具有树状结构性质的数据集合。它是由n（n&gt;0）个有限节点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。它具有以下的特点：</p>
+<ul>
+<li>每个节点都只有有限个子节点或无子节点；</li>
+<li>没有父节点的节点称为根节点；</li>
+<li>每一个非根节点有且只有一个父节点；</li>
+<li>除了根节点外，每个子节点可以分为多个不相交的子树；</li>
+<li>树里面没有环路(cycle)</li>
+</ul>
+<h2 id="定义">定义</h2>
+<ul>
+<li><strong>节点的度</strong>：一个节点含有的子树的个数称为该节点的度；</li>
+<li><strong>树的度</strong>：一棵树中，最大的节点度称为树的度；</li>
+<li><strong>叶节点或终端节点</strong>：度为零的节点；</li>
+<li><strong>非终端节点或分支节点</strong>：度不为零的节点；</li>
+<li><strong>父节点</strong>：若一个节点含有子节点，则这个节点称为其子节点的父节点；</li>
+<li><strong>子节点</strong>：一个节点含有的子树的根节点称为该节点的子节点；</li>
+<li><strong>兄弟节点</strong>：具有相同父节点的节点互称为兄弟节点；</li>
+<li><strong>节点的层</strong>：从根开始定义起，根为第1层，根的子节点为第2层，以此类推；</li>
+<li><strong>深度</strong>：对于任意节点n，n的深度为从根到n的唯一路径长，根的深度为0；</li>
+<li><strong>高度</strong>：对于任意节点n，n的高度为从n到一片树叶的最长路径长，所有树叶的高度为0；</li>
+<li><strong>堂兄弟节点</strong>：父节点在同一层的节点互为堂兄弟；</li>
+<li><strong>节点的祖先</strong>：从根到该节点所经分支上的所有节点；</li>
+<li><strong>子孙</strong>：以某节点为根的子树中任一节点都称为该节点的子孙。</li>
+<li><strong>森林</strong>：由m（m&gt;=0）棵互不相交的树的集合称为森林；</li>
+</ul>
+<h2 id="二叉树">二叉树</h2>
+<p>每个节点最多含有两个子树的树称为二叉树；</p>
+<ul>
+<li>在二叉树的第 i 层至多有 \(2^i－1\) 个结点。</li>
+<li>深度为 k 的二叉树至多有 \(2^k-1\) 个结点(k &gt;=1)。</li>
+<li>对任何一棵二叉树T, 如果其叶结点数为 \(n_0 \), 度为2的结点数为 \(n_2\),则\( n_0＝n_2＋1 \)。</li>
+</ul>
+<h3 id="完全二叉树">完全二叉树</h3>
+<p>对于一棵二叉树，假设其深度为d（d&gt;1）。除了第d层外，其它各层的节点数目均已达最大值，且第d层所有节点从左向右连续地紧密排列，这样的二叉树被称为完全二叉树；</p>
+<ul>
+<li>具有n个结点的完全二叉树的深度 \( \log_2n +1 \)</li>
+<li>如果对一棵有n个结点的完全二叉树的结点按层序编号, 则对任一结点 \( i (1≤i≤n) \) 有:
+<ol>
+<li>如果i=1, 则结点i是二叉树的根, 无双亲;如果i&gt;1, 则其双亲parent (i) 是结点[i/2].</li>
+<li>如果2i&gt;n, 则结点i无左孩子, 否则其左孩子lchild (i) 是结点2i;</li>
+<li>如果2i+1&gt;n, 则结点i无右孩子, 否则其右孩子rchild (i) 是结点2i+1.</li>
+</ol>
 </li>
-      <li>
-      </li>
-    </ul>
-  </div>
+</ul>
+<h3 id="满二叉树">满二叉树</h3>
+<p>除最后一层无任何子节点外，每一层上的所有结点都有两个子结点二叉树。一个满二叉树必然是一个<strong>完全二叉树</strong>。</p>
+<ul>
+<li>如果一个二叉树的层数为K，且结点总数是 ( \(2^k -1 \) )</li>
+</ul>
+<h3 id="平衡二叉树avl树">平衡二叉树（AVL树）</h3>
+<p>所有叶节点都在最底层的完全二叉树；</p>
+<ul>
+<li>左右子树的高度差小于等于1。</li>
+<li>其每一个子树均为平衡二叉树。</li>
+</ul>
+<h3 id="红黑树redblack-tree">红黑树（Red–black tree）</h3>
+<p>红黑树（英语：Red–black tree）是一种自平衡二叉查找树，</p>
+<ul>
+<li>节点是红色或黑色。</li>
+<li>根是黑色。</li>
+<li>所有叶子都是黑色（叶子是NIL节点）。</li>
+<li>每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）</li>
+<li>从任一节点到其每个叶子的所有简单路径都包含相同数目的黑色节点。</li>
+</ul>
+<h3 id="排序二叉树二叉查找树bst">排序二叉树(二叉查找树、BST）</h3>
+<ul>
+<li>若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节点的值；</li>
+<li>若任意节点的右子树不空，则右子树上所有节点的值均大于它的根节点的值；</li>
+<li>任意节点的左、右子树也分别为二叉查找树；</li>
+</ul>
+<h3 id="b树">B树</h3>
+<p>B树属于多叉树又名平衡多路查找树</p>
+<ul>
+<li>排序方式：所有节点关键字是按递增次序排列，并遵循左小右大原则；</li>
+<li>每个节点最多只有 m 个子节点。（注：M阶代表一个树节点最多有多少个查找路径，M=M路,当M=2则是2叉树,M=3则是3叉）；</li>
+<li>每个非叶子节点（除了根）具有至少 ⌈m/2⌉ 子节点。</li>
+<li>如果根不是叶节点，则根至少有两个子节点。</li>
+<li>具有 k 个子节点的非叶节点包含 k -1 个键。</li>
+<li>所有叶子都出现在同一水平，没有任何信息（高度一致）。</li>
+</ul>
+<h3 id="b树-1">B+树</h3>
+<p>B+ 树比起 B 树，最大的差异是非叶子节点不再存储具体数据，以及叶子节点是链表结构。非叶子节点不再存储具体数据，这使得 B+ 树更加扁平化，查找效率更高。叶子节点是链表结构，这使得 B+ 树更适合用在<strong>范围查找</strong>的场景中。</p>
+
+    </div><div>
+    <p class="copyright">
+        本文的版权归作者<a href="/about/"> Chaoism </a>所有，采用 <a href="https://mit-license.org/">The MIT
+            License (MIT)</a>。任何人可以进行转载、分享，但不可在未经允许的情况下用于商业用途；转载请注明出处。感谢配合！
+    </p>
+</div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -173,9 +248,6 @@
     <ul class="flex-column">
       <li>
         <a href="https://chaoism.github.io/post/art-of-war/" class="nav-link" title="孙子兵法">孙子兵法</a>
-      </li>
-      <li>
-        <a href="https://chaoism.github.io/post/tree/" class="nav-link" title="树 (数据结构)">树 (数据结构)</a>
       </li>
       <li>
         <a href="https://chaoism.github.io/post/katex/" class="nav-link" title="数学公式常用写法">数学公式常用写法</a>
@@ -257,9 +329,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
